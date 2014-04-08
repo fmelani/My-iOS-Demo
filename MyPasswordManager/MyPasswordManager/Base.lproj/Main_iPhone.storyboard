@@ -16,20 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96H-jQ-CEF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96H-jQ-CEF">
                                 <rect key="frame" x="20" y="101" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1YO-KX-bYd">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1YO-KX-bYd">
                                 <rect key="frame" x="20" y="139" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVw-1o-MnW">
-                                <rect key="frame" x="20" y="478" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVw-1o-MnW">
+                                <rect key="frame" x="20" y="184" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
@@ -41,8 +41,8 @@
                                     <segue destination="8YX-ce-x5E" kind="modal" modalTransitionStyle="flipHorizontal" id="Nht-sd-Noi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Password Mananger" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="daO-CN-RCV">
-                                <rect key="frame" x="20" y="32" width="280" height="61"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Password Mananger" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="daO-CN-RCV">
+                                <rect key="frame" x="20" y="32" width="280" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -50,6 +50,20 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XVw-1o-MnW" firstAttribute="leading" secondItem="dim-70-xYp" secondAttribute="leading" constant="20" id="1gp-XX-gM1"/>
+                            <constraint firstItem="1YO-KX-bYd" firstAttribute="top" secondItem="96H-jQ-CEF" secondAttribute="bottom" constant="8" id="7eO-Ki-DHG"/>
+                            <constraint firstItem="96H-jQ-CEF" firstAttribute="leading" secondItem="dim-70-xYp" secondAttribute="leading" constant="20" id="DJW-d7-aJG"/>
+                            <constraint firstAttribute="trailing" secondItem="1YO-KX-bYd" secondAttribute="trailing" constant="20" id="Kgk-qB-efk"/>
+                            <constraint firstItem="1YO-KX-bYd" firstAttribute="leading" secondItem="dim-70-xYp" secondAttribute="leading" constant="20" id="OJo-qi-0ZY"/>
+                            <constraint firstItem="daO-CN-RCV" firstAttribute="top" secondItem="0TY-7V-Arw" secondAttribute="bottom" constant="12" id="UZJ-Hr-DWG"/>
+                            <constraint firstItem="daO-CN-RCV" firstAttribute="leading" secondItem="dim-70-xYp" secondAttribute="leading" constant="20" id="Yut-1Q-Zf9"/>
+                            <constraint firstAttribute="trailing" secondItem="XVw-1o-MnW" secondAttribute="trailing" constant="20" id="fbS-uq-ECH"/>
+                            <constraint firstItem="96H-jQ-CEF" firstAttribute="top" secondItem="daO-CN-RCV" secondAttribute="bottom" constant="42" id="gXV-cL-sJD"/>
+                            <constraint firstAttribute="trailing" secondItem="96H-jQ-CEF" secondAttribute="trailing" constant="20" id="hF6-Sv-bKI"/>
+                            <constraint firstAttribute="trailing" secondItem="daO-CN-RCV" secondAttribute="trailing" constant="20" id="l7j-GY-8CB"/>
+                            <constraint firstItem="XVw-1o-MnW" firstAttribute="top" secondItem="1YO-KX-bYd" secondAttribute="bottom" constant="15" id="xx0-jX-9ww"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonLogin" destination="XVw-1o-MnW" id="GpB-Vs-FfD"/>

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Hl3-Pt-0qF">
             <objects>
-                <viewController id="O16-ey-htY" sceneMemberID="viewController">
+                <viewController id="O16-ey-htY" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DZ0-vL-TCH"/>
                         <viewControllerLayoutGuide type="bottom" id="c4E-ts-guG"/>
@@ -16,27 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Password Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDn-Xf-Y1U">
-                                <rect key="frame" x="20" y="20" width="728" height="68"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Password Manager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDn-Xf-Y1U">
+                                <rect key="frame" x="20" y="20" width="728" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6G-MD-5zP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z6G-MD-5zP">
                                 <rect key="frame" x="211" y="112" width="347" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7YL-kq-Ccb"/>
+                                    <constraint firstAttribute="width" constant="347" id="T6L-7s-1wl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="997-3a-HqW">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="997-3a-HqW">
                                 <rect key="frame" x="211" y="150" width="347" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="347" id="Owz-tX-Deg"/>
+                                    <constraint firstAttribute="height" constant="30" id="Z3T-er-RII"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nr2-Ha-vDL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nr2-Ha-vDL">
                                 <rect key="frame" x="361" y="249" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XAE-fH-6rh"/>
+                                    <constraint firstAttribute="width" constant="46" id="b7y-0S-dWt"/>
+                                </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -46,7 +58,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="997-3a-HqW" secondAttribute="centerX" id="3Rf-oP-7zX"/>
+                            <constraint firstItem="zDn-Xf-Y1U" firstAttribute="leading" secondItem="b5u-iW-cES" secondAttribute="leading" constant="20" id="8gs-u3-0aY"/>
+                            <constraint firstAttribute="centerX" secondItem="Nr2-Ha-vDL" secondAttribute="centerX" id="DnP-5g-lhJ"/>
+                            <constraint firstAttribute="trailing" secondItem="zDn-Xf-Y1U" secondAttribute="trailing" constant="20" id="Mxa-Uz-WIU"/>
+                            <constraint firstItem="zDn-Xf-Y1U" firstAttribute="top" secondItem="DZ0-vL-TCH" secondAttribute="bottom" id="ipX-Tb-59H"/>
+                            <constraint firstItem="z6G-MD-5zP" firstAttribute="centerX" secondItem="b5u-iW-cES" secondAttribute="centerX" id="jj2-nj-t2t"/>
+                            <constraint firstItem="z6G-MD-5zP" firstAttribute="top" secondItem="zDn-Xf-Y1U" secondAttribute="bottom" constant="65" id="sPF-HK-IHY"/>
+                            <constraint firstItem="997-3a-HqW" firstAttribute="top" secondItem="z6G-MD-5zP" secondAttribute="bottom" constant="8" id="xK9-ba-KIh"/>
+                            <constraint firstItem="Nr2-Ha-vDL" firstAttribute="top" secondItem="997-3a-HqW" secondAttribute="bottom" constant="69" id="zP0-3Y-gd2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonLogin" destination="Nr2-Ha-vDL" id="zLU-8l-qPX"/>
+                        <outlet property="fieldPassword" destination="997-3a-HqW" id="vJ5-cB-eQn"/>
+                        <outlet property="fieldUserName" destination="z6G-MD-5zP" id="exe-B6-RaN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0N-d3-zxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
